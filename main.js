@@ -1,9 +1,5 @@
 $(document).on('ready', function() {
 
-
-
-
-
     var currentTime = new Date();
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
@@ -15,7 +11,7 @@ $(document).on('ready', function() {
     console.log(theTime);
 
     var container = $('<div class="container"></div>');
-    var outerShell = $('<div class="outer-shell"></div>');
+    var outerShell = $('<div class="outer-shell "></div>');
     var innerShell = $('<div class="inner-shell"></div>');
     var clockText = $('<div class="clockText blink">' + theTime + '</div>');
     var clockScreen = $('<div class="clockScreen">');
@@ -35,13 +31,5 @@ $(document).on('ready', function() {
             'font-size': (width) / 5
         });
     }).trigger('resize');
-
-
-
-
-
-
-
-
 
 });
